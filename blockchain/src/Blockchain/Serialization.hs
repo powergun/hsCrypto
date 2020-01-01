@@ -6,7 +6,7 @@
 {-# LANGUAGE TypeSynonymInstances       #-}
 {-# LANGUAGE UndecidableInstances       #-}
 
-module Blockchain.Serialization where
+module Blockchain.Serialization (encode, decode) where
 
 import           Blockchain.Types
 
