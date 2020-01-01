@@ -17,4 +17,4 @@ source: <https://selfkey.org/what-is-a-merkle-tree-and-how-does-it-affect-blockc
 
 > Crypto.Hash has plenty of ways to hash something, and we’ve chosen type HaskoinHash = Digest SHA1 earlier. But in order to use it, we need some actual bytes to hash. That means we need a way to serialize and deserialize a Blockchain. A common library to do that is binary, which provides a Binary typeclass that we’ll implement for our types.
 
-MY NOTES: see hsAlgorithms/hashings for a simple example using a binary tree
+MY NOTES: see hsAlgorithms/hashings for a simple example using a binary tree (by firstly serializing the tree into a binary blob)
