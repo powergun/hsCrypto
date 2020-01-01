@@ -1,2 +1,6 @@
+
+import qualified TestBlockchainTypes
+
 main :: IO ()
-main = error "not implemented"
+main = do
+  TestBlockchainTypes.demo
