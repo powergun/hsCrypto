@@ -32,6 +32,16 @@ deriving instance Generic (MerkleF a)
 deriving instance Generic BlockHeader
 deriving instance Generic Transaction
 
+{-
+source: https://hackage.haskell.org/package/binary-0.10.0.0/docs/Data-Binary.html#t:Binary
+
+class Binary t where
+
+The Binary class provides put and get, methods to encode and decode
+a Haskell value to a lazy ByteString. It mirrors the Read and Show
+classes for textual representation of Haskell types, and is suitable
+for serialising Haskell values to disk, over the network.
+-}
 instance Binary BlockchainHash where
   get = do
     mDigest <- digestFromByteString <$> (get :: Get BS.ByteString)
