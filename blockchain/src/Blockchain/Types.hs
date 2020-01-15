@@ -40,4 +40,9 @@ data MerkleF a = Genesis
                | Node BlockHeader a
                deriving (Eq, Show, Functor, Traversable, Foldable)
 
+{-
+Cofree
+
+source: https://hackage.haskell.org/package/free-5.1.3/docs/Control-Comonad-Cofree.html#v::-60-
+-}
 type Blockchain = Cofree MerkleF Block
