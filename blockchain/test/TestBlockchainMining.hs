@@ -33,3 +33,5 @@ demo = do
   print eh
 
   print h
+
+  print $ balances chain

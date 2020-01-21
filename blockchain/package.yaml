@@ -30,6 +30,7 @@ dependencies:
   - vector-binary-instances == 0.2.5.1
   - binary == 0.8.6.0
   - base16-bytestring == 0.1.1.6
+  - containers == 0.6.0.1
 
 library:
   source-dirs: src

@@ -15,7 +15,7 @@ import qualified Data.Vector            as V
 import           Protolude
 
 newtype Account = Account Integer
-                  deriving (Eq, Show, Num)
+                  deriving (Eq, Show, Num, Ord)
 
 data Transaction = Transaction
   { _from   :: Account
